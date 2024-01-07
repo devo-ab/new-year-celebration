@@ -124,6 +124,12 @@
     height: 600px;
 }
 
+.overlay-img {
+    position: absolute;
+    right: 138px;
+    top: 68px;
+}
+
 .banner2-content {
     position: absolute;
     text-align: left;
@@ -182,7 +188,7 @@
     text-align: center;
 }
 
-.banner3-content{
+.banner3-content {
     padding: 120px;
 }
 
@@ -222,6 +228,99 @@
 }
 
 /* banner3_style_end */
+
+
+/* banner4_style_start */
+.banner4 {
+    display: flex;
+    align-items: center;
+    width: 1320px;
+    text-align: left;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 110px;
+    position: relative;
+}
+
+.banner4-c1{
+    margin-right: 85px;
+}
+
+.bnn-c1h4 {
+    color: #F00;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.bnn-c1h2 {
+    color: #070211;
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 16px;
+}
+
+.bnn-c1para {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 22px;
+}
+
+.banner4-img {
+    border: 12px solid #F00;
+    border-radius: 100%;
+    width: 463px;
+    height: 463px;
+    flex-shrink: 0;
+    border-radius: 463px;
+    border: 15px solid #F00;
+}
+
+.bnn4-img{
+    position: absolute;
+    left: 480px;
+}
+
+.banner4-c2 {
+    margin-left: 65px;
+}
+
+.bnn-c2h1 {
+    color: #F00;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 120px;
+}
+
+.bnn-c2para {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: justify;
+    margin-top: 16px;
+}
+
+.bnn-c2img {
+    margin-top: 16px;
+}
+
+/* banner4_style_end */
 
 
 /* main_style_end */
