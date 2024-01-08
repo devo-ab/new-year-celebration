@@ -60,10 +60,12 @@
 
 /* banner1_style */
 .banner1{
+    text-align: center;
+    width: 1320px;
     margin: 0 auto;
 }
 .banner-content {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .banner-h1 {
