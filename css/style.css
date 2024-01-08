@@ -128,7 +128,6 @@
     position: absolute;
     right: 138px;
     top: 68px;
-    mix-blend-mode: ;
 }
 
 .banner2-content {
@@ -376,7 +375,7 @@
 
 
 
-.bnn5-img1{
+.bnn5-img1 {
     position: absolute;
     top: 433px;
     left: 0;
@@ -389,11 +388,6 @@
     right: 0px;
 }
 
-.bnn5-img3 {
-    /* z-index: 10; */
-    /* position: absolute; */
-}
-
 .bnn5-img4 {
     position: absolute;
     right: 275px;
@@ -404,8 +398,122 @@
 /* banner5_style_end */
 
 /* banner6_style-start */
+.banner6 {
+    /* text-align: center; */
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
 
-/* banner_style_end */
+.bnn6-h3 {
+    color: #F00;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.bnn6-h1 {
+    color: #070211;
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 14px;
+}
+
+.bnn6-para {
+    color: rgba(7, 2, 17, 0.60);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 18px;
+}
+
+.bnn6-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+
+/* banner6_style_end */
+
+/* banner7_style_start */
+.banner7 {
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 120px;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+}
+
+.bnn7-content {
+    text-align: center;
+    padding: 80px 210px;
+}
+
+.bnn7-h1 {
+    color: #070211;
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+.bnn7-para {
+    color: rgba(7, 2, 17, 0.60);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 15px;
+}
+
+.bnn7-in {
+    border: none;
+    border-radius: 50px;
+    background: #FFF;
+    width: 648px;
+    height: 72px;
+    padding: 0px 25px;
+}
+
+.bnn7-btn {
+    margin-top: 30px;
+    position: relative;
+}
+
+.bnn7-btnn {
+    border-radius: 0px 50px 50px 0px;
+    background: #F00;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    width: 210px;
+    height: 72px;
+    flex-shrink: 0;
+    border: none;
+    position: absolute;
+    right: 101px;
+}
+
+.bnn7-a{
+    text-decoration: none;
+    color: white;
+}
+
+/* banner7_style_end */
 
 
 /* main_style_end */
