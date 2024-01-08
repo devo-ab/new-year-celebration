@@ -531,8 +531,9 @@
 footer {
     background: #070211;
     margin-top: 110px;
-    padding-top: 110px;
-    padding-bottom: 110px;
+}
+.fotpad{
+    padding: 110px 0;
 }
 
 .foot-1 {
@@ -540,7 +541,6 @@ footer {
     justify-content: space-between;
     width: 1320px;
     margin: 0 auto;
-    
 }
 
 .foot-para1 {
@@ -569,6 +569,7 @@ footer {
     height: 1px;
     margin: 0 auto;
     border: none;
+    margin-top: 35px;
 }
 
 .foot-sc {
