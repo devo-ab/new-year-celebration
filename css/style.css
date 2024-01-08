@@ -374,10 +374,15 @@
     margin-top: 70px;
 }
 
-.bnn5-img1 {
+
+
+.bnn5-img1{
     position: absolute;
     top: 433px;
+    left: 0;
+    z-index: -1;
 }
+
 
 .bnn5-img2 {
     position: absolute;
@@ -385,8 +390,8 @@
 }
 
 .bnn5-img3 {
-    position: absolute;
-    z-index: z;
+    /* z-index: 10; */
+    /* position: absolute; */
 }
 
 .bnn5-img4 {
