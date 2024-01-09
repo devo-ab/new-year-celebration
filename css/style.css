@@ -450,6 +450,11 @@
 }
 
 
+.bnn6-1:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
 /* banner6_style_end */
 
 /* banner7_style_start */
@@ -530,10 +535,11 @@
 /* footer_start */
 footer {
     background: #070211;
-    width: 1420px;
+    width: 1473px;
     margin: 0 auto;
     margin-top: 110px;
     text-align: center;
+    border-radius: 05px;
 }
 .fotpad{
     padding: 110px 0;
