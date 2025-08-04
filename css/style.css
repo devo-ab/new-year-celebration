@@ -3,9 +3,50 @@
     padding: 0;
 }
 
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff4b5c;
+}
+
+/* Hamburger (Mobile Menu) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: black;
+}
+
+/* navbar */
+
 /* header_style_start */
 .bg-head {
-    background-image: url('../images/background/BannerImage.png');
+    background-image: url('../assets/background/BannerImage.png');
     background-size: cover;
     background-position: center;
     margin: 0 auto;
@@ -16,6 +57,8 @@
     height: 600px;
     margin-top: 80px;
     border-radius: 16px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .overlay {
@@ -25,16 +68,24 @@
     left: 0;
     width: 1320px;
     height: 600px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .header-content {
     padding: 177px 344px;
     position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .header-h3 {
     color: #FFF;
-    text-align: center;
+    margin: 0 auto;
     font-family: 'Merriweather', serif;
     font-size: 32px;
     font-weight: 400;
@@ -42,7 +93,7 @@
 
 .header_h1 {
     color: #FFF;
-    text-align: center;
+    margin: 0 auto;
     font-family: 'Merriweather', serif;
     font-size: 72px;
     font-weight: 900;
@@ -60,10 +111,8 @@
     text-align: center;
     width: 1320px;
     margin: 0 auto;
-}
-
-.banner-content {
-    /* text-align: center; */
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .banner-h1 {
@@ -99,7 +148,7 @@
 
 /* banner2_style_start */
 .banner2 {
-    background-image: url('../images/background/Vectorrr.png');
+    background-image: url('../assets/background/Vectorrr.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +159,8 @@
     height: 600px;
     margin-top: 80px;
     border-radius: 16px;
-
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .banner2-overlay {
@@ -120,6 +170,8 @@
     left: 0;
     width: 1320px;
     height: 600px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .overlay-img {
@@ -180,6 +232,8 @@
     border-radius: 16px;
     margin-top: 110px;
     text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .banner3-content {
@@ -213,7 +267,8 @@
     text-decoration: none;
     color: white;
     font-family: 'Inter', sans-serif;
-    font-size: 20px;;
+    font-size: 20px;
+    ;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -231,10 +286,16 @@
     justify-content: space-between;
     margin-top: 110px;
     position: relative;
+    max-width: 100%;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+    box-sizing: border-box;
 }
 
 .banner4-c1 {
     margin-right: 85px;
+    flex: 1;
+    min-width: 280px;
 }
 
 .bnn-c1h4 {
@@ -263,22 +324,26 @@
 }
 
 .banner4-img {
-    border: 12px solid #F00;
-    border-radius: 100%;
     width: 463px;
     height: 463px;
     flex-shrink: 0;
-    border-radius: 463px;
+    border-radius: 100%;
     border: 15px solid #F00;
+    position: relative;
+    z-index: 1;
 }
 
 .bnn4-img {
     position: absolute;
-    left: 480px;
+    top: 11%;
+    left: 11%;
+    z-index: 2;
 }
 
 .banner4-c2 {
     margin-left: 65px;
+    flex: 1;
+    min-width: 280px;
 }
 
 .bnn-c2h1 {
@@ -312,6 +377,9 @@
     width: 1320px;
     margin: 0 auto;
     margin-top: 100px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
 }
 
 .bnn5-h5 {
@@ -340,8 +408,11 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 32px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-top: 25px;
+    margin: 25px auto 0 auto;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .bnn5-rele {
@@ -349,21 +420,39 @@
     width: 1320px;
     margin: 0 auto;
     margin-top: 70px;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
 }
 
+.bnn5Two {
+    position: absolute;
+    right: 0;
+    bottom: 230px;
+    z-index: 10;
+}
 
+.designRele {
+    position: relative;
+}
 
 .bnn5-img1 {
     position: absolute;
     top: 433px;
     left: 0;
     z-index: -1;
+    max-width: 100%;
 }
 
 
 .bnn5-img2 {
-    position: absolute;
     right: 0px;
+    max-width: 100%;
+}
+
+.bnn5-img3 {
+    right: 0px;
+    max-width: 100%;
 }
 
 .bnn5-img4 {
@@ -371,6 +460,7 @@
     right: 275px;
     top: 80px;
     z-index: z;
+    max-width: 100%;
 }
 
 /* banner5_style_end */
@@ -378,9 +468,11 @@
 /* banner6_style-start */
 .banner6 {
     /* text-align: center; */
-    width: 1320px;
-    margin: 0 auto;
-    margin-top: 130px;
+    width: 100%;
+    max-width: 1320px;
+    margin: 130px auto 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .bnn6-h3 {
@@ -415,8 +507,14 @@
     margin-top: 50px;
 }
 
+.bnn6-1 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-.bnn6-1:hover{
+
+.bnn6-1:hover {
     opacity: 50%;
     cursor: pointer;
 }
@@ -425,16 +523,18 @@
 
 /* banner7_style_start */
 .banner7 {
-    width: 1320px;
-    margin: 0 auto;
-    margin-top: 120px;
+    width: 100%;
+    max-width: 1320px;
+    margin: 120px auto 0 auto;
     border-radius: 16px;
     background: rgba(255, 0, 0, 0.05);
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .bnn7-content {
     text-align: center;
-    padding: 80px 210px;
+    padding: 80px 20px;
 }
 
 .bnn7-h1 {
@@ -497,13 +597,12 @@
 /* footer_start */
 footer {
     background: #070211;
-    width: 1473px;
     margin: 0 auto;
     margin-top: 110px;
     text-align: center;
-    border-radius: 05px;
 }
-.fotpad{
+
+.fotpad {
     padding: 110px 0;
 }
 
@@ -561,15 +660,680 @@ footer {
     margin-top: 35px;
 }
 
-.foot-paraL, .foot-btn {
+.foot-paraL,
+.foot-btn {
     color: #FFF;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 500;
 }
 
-.foot-btn{
+.foot-btn {
     border: none;
     background: none;
 }
+
+.foot-1,
+.foot-sc,
+.foot-last,
+.foot-hr {
+    width: 100%;
+    max-width: 1320px;
+
+}
+
 /* footer_end */
+
+
+/* responsive start */
+@media (max-width: 576px) {
+    * {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    /* navbar */
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #070211;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px 0;
+    }
+
+    /* navbar */
+
+    .bg-head,
+    .overlay {
+        width: 100%;
+
+        height: 300px;
+
+    }
+
+    .header-content {
+        padding: 120px 80px;
+
+    }
+
+    .header-h3 {
+        font-size: 18px;
+    }
+
+    .header_h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+
+    /* banner1 */
+    .banner1 {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .banner-h1 {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+
+    .banner-para {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .banner-h2 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .banner1-img {
+        margin-top: 20px;
+    }
+
+    .banner1-img img {
+        width: 100%;
+        /* make image responsive */
+        height: auto;
+    }
+
+    /* banner1 */
+
+    /* banner2 */
+    .banner2,
+    .banner2-overlay {
+        width: 100%;
+        height: 350px;
+    }
+
+    .banner2-content {
+        padding: 30px 20px 30px 20px;
+        position: relative;
+        /* so text flows normally */
+        text-align: center;
+    }
+
+    .overlay-img {
+        position: relative;
+        right: auto;
+        top: auto;
+        margin: 10px auto;
+        display: block;
+        max-width: 100px;
+        height: auto;
+    }
+
+    .overlay-img img {
+        width: 80%;
+    }
+
+    .banner2-h1 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+
+    .banner2-para {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 12px;
+    }
+
+    .banner2-btn {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .btn-deco {
+        margin-left: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #FF0000;
+        /* example button background */
+        border-radius: 6px;
+    }
+
+    /* banner2 */
+
+    /* banner3 */
+    .banner3 {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        border-radius: 12px;
+    }
+
+    .banner3-content {
+        padding: 40px 20px;
+    }
+
+    .banner3-para {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .banner3-btn {
+        padding: 12px 24px;
+        margin-top: 30px;
+    }
+
+    .banner3-btn a {
+        font-size: 16px;
+    }
+
+    /* banner3 */
+
+
+    /* banner4 */
+    .banner4 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .banner4-c1,
+    .banner4-c2 {
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    .bnn-c1h4 {
+        font-size: 18px;
+    }
+
+    .bnn-c1h2 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .bnn-c1para,
+    .bnn-c2para {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .banner4-img {
+        width: 200px;
+        height: 200px;
+        border-width: 8px;
+        margin: 20px 0;
+    }
+
+    .bnn4-img {
+        position: absolute;
+        width: 160px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .bnn-c2h1 {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .bnn-c2img img {
+        width: 60px;
+    }
+
+    /* banner4 */
+
+    /* banner5 */
+    .bnn5-content {
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 60px;
+    }
+
+    .bnn5-h5 {
+        font-size: 18px;
+    }
+
+    .bnn5-h1 {
+        font-size: 36px;
+    }
+
+    .bnn5-para {
+        width: 100%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .bnn5-rele {
+        position: static !important;
+        display: flex !important;
+        gap: 20px;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    .bnn5-img1 {
+        position: static;
+    }
+
+    .bnn5Two {
+        position: static;
+        justify-items: center;
+    }
+
+    .bnn5-img4 {
+        position: absolute;
+        right: 60px;
+        top: 180px;
+        z-index: z;
+        max-width: 100%;
+    }
+
+    /* banner5 */
+
+
+    /* banner6 */
+    .bnn6-img {
+        grid-template-columns: 1fr;
+    }
+
+    /* banner6 */
+
+
+    /* banner7 */
+    .bnn7-in {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 15px;
+        border-radius: 50px;
+    }
+
+    .bnn7-btnn {
+        position: static;
+        width: 100%;
+        height: 60px;
+        border-radius: 50px;
+        margin-top: 10px;
+    }
+
+    .bnn7-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+    }
+
+    /* banner7 */
+
+
+    /* footer */
+    .foot-1 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foot-last {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foot-para1,
+    .foot-para2,
+    .foot-paraL,
+    .foot-btn {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .foot-hr {
+        width: 90%;
+    }
+
+    .foot-social img {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    /* footer */
+}
+
+
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+    /* navbar */
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+    /* navbar */
+    .bg-head,
+    .overlay {
+        width: 90%;
+
+        height: 450px;
+
+    }
+
+    .header-content {
+        padding: 150px 50px;
+
+    }
+
+    .header-h3 {
+        font-size: 24px;
+    }
+
+    .header_h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    /* banner1 */
+    .banner1 {
+        width: 90%;
+    }
+
+    .banner-h1 {
+        font-size: 60px;
+        margin-top: 70px;
+    }
+
+    .banner-para {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .banner-h2 {
+        font-size: 36px;
+        margin-top: 12px;
+    }
+
+    .banner1-img {
+        margin-top: 30px;
+    }
+
+    .banner1-img img {
+        width: 100%;
+        /* make image responsive */
+        height: auto;
+    }
+
+    /* banner1 */
+
+
+    /* banner2 */
+    .banner2,
+    .banner2-overlay {
+        width: 90%;
+        height: 450px;
+    }
+
+    .banner2-content {
+        padding: 60px 220px 60px 40px;
+    }
+
+    .overlay-img {
+        right: 40px;
+        top: 25%;
+        max-width: 150px;
+        max-height: auto;
+    }
+
+    .overlay-img img {
+        width: 130%;
+    }
+
+    .banner2-h1 {
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: 3px;
+    }
+
+    .banner2-para {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 16px;
+    }
+
+    .banner2-btn {
+        font-size: 18px;
+        margin-top: 30px;
+    }
+
+    .btn-deco {
+        margin-left: 20px;
+    }
+
+    /* banner2 */
+
+
+    /* banner3 */
+    .banner3 {
+        width: 90%;
+        height: auto;
+        /* let height grow with content */
+        margin-top: 70px;
+    }
+
+    .banner3-content {
+        padding: 60px 40px;
+    }
+
+    .banner3-para {
+        font-size: 24px;
+        line-height: 42px;
+    }
+
+    .banner3-btn {
+        padding: 14px 28px;
+        margin-top: 45px;
+    }
+
+    .banner3-btn a {
+        font-size: 18px;
+    }
+
+    /* banner3 */
+
+
+    /* banner4 */
+    .banner4 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner4-c1,
+    .banner4-c2 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .bnn-c1h2 {
+        font-size: 36px;
+    }
+
+    .bnn-c1para,
+    .bnn-c2para {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .banner4-img {
+        width: 300px;
+        height: 300px;
+        margin: 30px 0;
+    }
+
+    .bnn4-img {
+        position: absolute;
+        width: 240px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .bnn-c2h1 {
+        font-size: 36px;
+        margin-top: 40px;
+    }
+
+    /* banner4 */
+
+
+    /* banner5 */
+    .bnn5-content {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 80px;
+    }
+
+    .bnn5-h5 {
+        font-size: 20px;
+    }
+
+    .bnn5-h1 {
+        font-size: 48px;
+    }
+
+    .bnn5-para {
+        width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .bnn5-rele {
+        position: static !important;
+        display: flex !important;
+        gap: 20px;
+        justify-content: center;
+        justify-items: center;
+        flex-direction: column;
+    }
+
+    .bnn5-img1 {
+        position: static;
+    }
+
+    .bnn5Two {
+        position: static;
+        justify-items: center;
+    }
+
+    .bnn5-img4 {
+        position: absolute;
+        right: 60px;
+        top: 180px;
+        z-index: z;
+        max-width: 100%;
+    }
+
+    /* banner5 */
+
+    /* banner6 */
+    .bnn6-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* banner6 */
+
+
+    /* banner7 */
+    .bnn7-in {
+        width: 100%;
+        max-width: 400px;
+        height: 60px;
+    }
+
+    .bnn7-btnn {
+        width: 160px;
+        height: 60px;
+        right: 100px;
+    }
+
+    .bnn7-btn {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        position: static;
+        flex-wrap: wrap;
+    }
+
+    /* banner7 */
+
+
+    /* footer */
+    .foot-1 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foot-last {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foot-para1,
+    .foot-para2,
+    .foot-paraL,
+    .foot-btn {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .foot-hr {
+        width: 95%;
+    }
+
+    /* footer */
+}
+
+/* responsive end */
